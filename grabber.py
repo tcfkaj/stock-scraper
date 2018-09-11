@@ -16,10 +16,11 @@ def get_data(tik_, Start_, End_):
 # Loops through a list of tickers to generate datasets inside location file
 def gen_all(tikz_, start_, end_, location_):
 
-    store = pd.HDFStore(location_)
+    store = pd.HDFStore(location_, 'w', complib=str('zlib'), complevel=5)
 
     for i in range(len(tikz_)):
         tik = tikz_[i]
         data = get_data(tik, start_, end_)
-        store[tik] = data
+        store.put(tik, data, data_columns=data.columns)
 
+    store.close()

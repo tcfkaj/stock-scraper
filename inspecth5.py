@@ -3,7 +3,7 @@ import tables
 import h5py as h
 
 # Location of h5 file to inspect, must be changed in file
-location = 'data/top238_in_top20_industries.h5'
+location = 'data/top238_in_top20_industries_R-friendly.h5'
 
 # Provides a simple UI to see the head() of desired datasets in h5 h5 h5 h5 h5 file
 with h.File(location, 'r') as hdf:

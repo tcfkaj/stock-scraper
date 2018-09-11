@@ -1,7 +1,7 @@
 from grabber import *
 
 # Location - path to store data
-location = 'data/top238_in_top20_industries.h5'
+location = 'data/top238_in_top20_industries_R-friendly.h5'
 
 # Start and end of time period in 'YYYY-MM-DD' format
 Start = '2016-01-01'
