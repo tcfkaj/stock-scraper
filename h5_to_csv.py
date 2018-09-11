@@ -4,7 +4,6 @@
 import pandas as pd
 import tables
 import h5py as h
-import csv as csv
 
 # Must be path to .h5 file
 path_to_h5 = "data/top238_by_industries/top238_in_top20_industries.h5"
