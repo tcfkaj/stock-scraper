@@ -6,11 +6,11 @@ import tables
 import h5py as h
 
 # Must be path to .h5 file
-path_to_h5 = "data/top238_by_industries/top238_in_top20_industries.h5"
+path_to_h5 = "data/top500_10years/top500_10years.h5"
 
 # Path to folder where you want all generated csv files
-# to end up
-csv_folder = "data/top238_by_industries/csv/"
+# to end up - must exist
+csv_folder = "data/top500_10years/csv/"
 
 with h.File(path_to_h5, 'r') as hdf:
     ls = list(hdf.keys())
