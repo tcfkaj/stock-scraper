@@ -1,10 +1,10 @@
 from grabber import *
 
 # Location - path to store data
-location = 'data/top500_10years/top500_10years.h5'
+location = 'data/2018-09-14/top500_9years.h5'
 
 # Start and end of time period in 'YYYY-MM-DD' format
-Start = '2008-01-01'
+Start = '2009-01-01'
 End = '2018-08-31'
 
 # Stock ticker list must be saved as a single column text file in pwd named 'tikz.csv'
