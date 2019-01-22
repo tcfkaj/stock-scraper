@@ -1,15 +1,15 @@
 from grabber import *
 
 # Location - path to store data
-location = 'data/2018-09-14/top500_9years.h5'
+location = 'data/sp500/SP500-2011.h5'
 
 # Start and end of time period in 'YYYY-MM-DD' format
-Start = '2009-01-01'
-End = '2018-08-31'
+Start = '2011-01-01'
+End = '2011-12-31'
 
 # Stock ticker list must be saved as a single column text file in pwd named 'tikz.csv'
 # The following block converts this file to a list of strings
-with open('tikz.csv') as f:
+with open('SP500.csv') as f:
     reader = csv.reader(f)
     tikz = [r[0] for r in reader]
 

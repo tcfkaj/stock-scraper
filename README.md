@@ -1,8 +1,15 @@
-# Purpose of this repository
+## Dependencies
 
-The purpose of this repository is two-fold:
+* pandas
+* pandas_datareader
+* tables
+* fix_yahoo_finance
+* csv
+* tables
+* h5py (for inspecth5.py and h5_to_csv.py)
 
-## Stock Scraper
+
+## Usage
 
 1. Once you have a list of tickers you are interested in, in a text file line by line, save them in main directory as 'tikz.csv'.
 
@@ -15,23 +22,4 @@ The purpose of this repository is two-fold:
 5. Save in-file changes and compile and a single HDF5 file will be generated with a dataset for each ticker containing daily Open, Close, High, Volume data for each date within the specified timeframe. The datasets within the file generated is extractable as a Pandas dataframe.
 
 6. The .h5 files in /data folder can be briefly inspected with inspecth5.py (*filename must be specified in the file*) and compiling will yield a simple UI. Although you will be able to explore better with an HDF5 viewer.
-
-## Data Respository
-
-This is part of a class project for a Machine Learning course and all generated
-data will be kept in data/ subfolder.
-
-I will try to be as desriptive as possible in naming the datasets and
-eventually, it is my intention, for it to hold some pretty complete HDF5 files
-with Groups, Subgroups and Metadata.
-
-# Python libraries needed
-
-* pandas
-* pandas_datareader
-* tables
-* fix_yahoo_finance
-* csv
-* tables
-* h5py (for inspecth5.py and h5_to_csv.py)
 

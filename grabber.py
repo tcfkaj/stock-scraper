@@ -20,6 +20,7 @@ def gen_all(tikz_, start_, end_, location_):
 
     for i in range(len(tikz_)):
         tik = tikz_[i]
+        print(tik)
         data = get_data(tik, start_, end_)
         store.put(tik, data, data_columns=data.columns)
 
